@@ -1,0 +1,10 @@
+build/
+devel/
+log/
+*.pyc
+__pycache__/
+.msg
+.srv
+.action
+cmake-build-*
+

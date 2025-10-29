@@ -1,0 +1,19 @@
+# Goal
+float64 x_pick
+float64 y_pick
+float64 z_pick
+float64 x_place
+float64 y_place
+float64 z_place
+float64 grip_strength
+---
+# Result
+string result_message
+bool sufficient_grip
+---
+# Feedback
+string phase
+float64 current_x
+float64 current_y
+float64 current_z
+

@@ -1,0 +1,15 @@
+#!/usr/bin/env python3 -W ignore::SyntaxWarning
+python3 -W ignore::SyntaxWarning scripts/pick_place_client.py
+#!/usr/bin/env python3
+import warnings
+warnings.filterwarnings("ignore", category=SyntaxWarning)
+import rospy, actionlib
+from robot_actions.msg import PickPlaceAction, PickPlaceGoal
+
+
+
+export TURTLEBOT3_MODEL=burger
+roslaunch turtlebot3_gazebo turtlebot3_world.launch
+
+rosrun followup_bot_video followup_bot_video.py /home/valkyrie/Development/ros1_ws/src/followup_bot_video/videos/road.mp4
+
